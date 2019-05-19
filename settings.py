@@ -1,3 +1,4 @@
+"""配置文件"""
 SERVER_SECRET_KEY = '689PL$BN&ATM'
 PORT = 8887
 SERVER_MASTER = 'localhost:8888'

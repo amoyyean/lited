@@ -1,3 +1,4 @@
+"""在握手时发送密钥和端口号"""
 import os
 import base64
 from tornado.queues import Queue
@@ -14,7 +15,7 @@ _default_max_message_size = 10 * 1024 * 1024
 
 
 class SecretWebSocketConnection(WebSocketClientConnection):
-    """在原基础上新增SERVER_SECRET_KEY"""
+    """在原基础上新增SERVER_SECRET_KEY和PORT"""
 
     def __init__(self, request, on_message_callback=None,
                  compression_options=None, ping_interval=None, ping_timeout=None,

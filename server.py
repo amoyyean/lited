@@ -1,3 +1,5 @@
+"""启动文件
+并实现握手和通信功能"""
 from tornado import ioloop
 import tornado.web
 from custom import secret_websocket_connect
